@@ -1,0 +1,20 @@
+src: "test.xlsx"
+dest:
+  サンプル:
+    src:
+      sheet: "Sheet1"
+      month:
+        start: H3
+        end: S3
+      target:
+        start: B2
+        end: D4
+    dest:
+      book: "test.xlsx"
+      sheet: "Sheet2"
+      month:
+        start: H3
+        end: S3
+      target:
+        start: B2
+        end: D4

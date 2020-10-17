@@ -1,0 +1,14 @@
+src: "test.xlsx"
+dest:
+  sample:
+    src:
+      sheet: "Sheet1"
+      target:
+        start: B2
+        end: D4
+    dest:
+      book: "test.xlsx"
+      sheet: "Sheet2"
+      target:
+        start: A1
+        end: C3
