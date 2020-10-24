@@ -59,7 +59,7 @@ class Transformer:
         dest_wb = openpyxl.load_workbook(dest.path, keep_vba=True)
         dest_ws = dest_wb[dest.sheet]
 
-        for rows, values in zip(dest_ws[dest.target_range.start:dest.target_range.end], src.values.tolist():
+        for rows, values in zip(dest_ws[dest.target_range.start:dest.target_range.end], src.values.tolist()):
             for dest_cell, src_cell in zip(rows, values):
                 # Post only those that have no formula in the destination cell and have a value in the source cell
                 if (dest_cell is not None) and (type(dest_cell) is not str):
